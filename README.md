@@ -63,3 +63,75 @@ pie
     "Resolved" :  6
     "Closed" : 6
 ```
+
+
+## Git graph
+
+### Tags
+
+```mermaid
+gitGraph
+       commit
+       commit id: "Normal" tag: "RC 1"
+       commit
+       commit id: "Reverse" type: REVERSE tag: "RC_2"
+       commit
+       commit id: "Highlight" type: HIGHLIGHT tag: "v1.0.0"
+       commit
+```
+
+### No branch label, no commit labels
+
+```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'forest', 'gitGraph': {'showBranches': false, 'showCommitLabel': false}} }%%
+gitGraph
+       commit
+       commit id: "Normal" tag: "RC 1"
+       commit
+       commit id: "Reverse" type: REVERSE tag: "RC_2"
+       commit
+       commit id: "Highlight" type: HIGHLIGHT tag: "v1.0.0"
+       commit
+```
+
+### Merges
+
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    commit
+    branch feature
+    checkout feature
+    commit
+    commit
+    commit
+    checkout develop
+    merge feature
+    checkout main
+    commit
+    merge develop tag: "RC 1" type: REVERSE
+    commit
+```
+
+### Top to bottom
+
+```mermaid
+gitGraph TB:
+    commit
+    commit
+    branch develop
+    commit
+    branch feature
+    checkout feature
+    commit
+    commit
+    commit
+    checkout develop
+    merge feature tag: "RC 1"
+    checkout main
+    commit
+    merge develop tag: "Beta 1" type: REVERSE
+    commit
+```
