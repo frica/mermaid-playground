@@ -14,6 +14,8 @@ flowchart TD
 
 ## Pie chart
 
+### showdata and style outer stroke
+
 ```mermaid
 %%{init: {"pie": {"textPosition": 0.5}, "themeVariables": {"pieOuterStrokeWidth": "3px"}} }%%
 pie showData
@@ -25,6 +27,7 @@ pie showData
     "Closed" : 6
 ```
 
+### dark theme
 
 ```mermaid
 %%{init: {'theme':'dark'}}%%
@@ -37,9 +40,10 @@ pie
     "Closed" : 6
 ```
 
+### Custom colors
+
 ```mermaid
-%%{
-  init: {
+%%{init: {
     'theme': 'base',
     'themeVariables': {
       'primaryColor': '#64518a',
@@ -47,7 +51,7 @@ pie
       'primaryBorderColor': '#7C0000',
       'lineColor': '#F8B229',
       'secondaryColor': '#e98a2e',
-      'tertiaryColor': '#fff'
+      'tertiaryColor': '#20a5de'
     }
   }
 }%%
