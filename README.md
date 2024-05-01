@@ -47,7 +47,7 @@ pie
     'theme': 'base',
     'themeVariables': {
       'primaryColor': '#64518a',
-      'primaryTextColor': '#fff',
+      'primaryTextColor': '#0c0d0e',
       'primaryBorderColor': '#7C0000',
       'lineColor': '#F8B229',
       'secondaryColor': '#e98a2e',
