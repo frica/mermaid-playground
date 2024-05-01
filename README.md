@@ -111,7 +111,7 @@ gitGraph
     merge feature
     checkout main
     commit
-    merge develop tag: "RC 1" type: REVERSE
+    merge develop tag: "RC 1"
     commit
 ```
 
@@ -132,6 +132,6 @@ gitGraph TB:
     merge feature tag: "RC 1"
     checkout main
     commit
-    merge develop tag: "Beta 1" type: REVERSE
+    merge develop tag: "Beta 1"
     commit
 ```
