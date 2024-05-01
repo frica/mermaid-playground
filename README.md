@@ -12,6 +12,36 @@ flowchart TD
     C -->|Three| F[fa:fa-car Car]
 ```
 
+## Block chart
+
+### Example
+
+```mermaid
+block-beta
+  columns 3
+  Frontend blockArrowId6<[" "]>(right) Backend
+  space:2 down<[" "]>(down)
+  Disk left<[" "]>(left) Database[("Database")]
+
+  classDef front fill:#696,stroke:#333;
+  classDef back fill:#969,stroke:#333;
+  class Frontend front
+  class Backend,Database back
+```
+
+### No styling
+
+```mermaid
+block-beta
+  columns 3
+  Frontend blockArrowId6<[" "]>(right) Backend
+  up<["1x"]>(up) space:1 down<[" "]>(down)
+  Disk left<[" "]>(left) Database[("Database")]
+
+
+```
+
+
 ## Pie chart
 
 ### showdata and style outer stroke
